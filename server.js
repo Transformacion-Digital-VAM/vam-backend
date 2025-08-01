@@ -24,6 +24,7 @@ app.use('/api/solicitudes', solicitud);
 app.get('/', (req, res) => {
   res.send('Esta funcionando correctamente');
 });
+
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
