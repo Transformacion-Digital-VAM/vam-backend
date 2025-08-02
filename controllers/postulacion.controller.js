@@ -46,7 +46,7 @@ exports.postular = async (req, res, next) => {
     const mailOptions = {
       from:     `"${nombre}" <${email}>`,
       // Se actualiza el asunto para incluir el nombre de la vacante
-      to:       'aux.finanzas@vamosamejorar.com',
+      to:       'talentovam@vamosamejorar.com',
       subject: `Nueva postulación: ${titulo} (ID: ${vacanteId})`,
       html: `
         <!DOCTYPE html>
