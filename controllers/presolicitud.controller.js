@@ -21,7 +21,7 @@ exports.crearSolicitud = async (req, res) => {
     // correo
     const mailOptions = {
       from: process.env.user,
-      to: 'supervision.area.operativa@vamosamejorar.com, vamosamejorar@vamosamejorar.com',
+      to: 'supervision.area.operativa@vamosamejorar.com, vamosamejorar@vamosamejorar.com, magyho23@gmail.com',
       subject: 'Nueva solicitud de crédito',
       html: `
         <!DOCTYPE html>
