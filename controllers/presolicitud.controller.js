@@ -13,8 +13,8 @@ exports.crearSolicitud = async (req, res) => {
       port: 309,
       secure: true,
       auth:{
-        user: 'danielamanzanorangel@gmail.com',
-        pass: 'uqyu ylii gzug lovb',
+        user: 'transformaciondigitalvam@gmail.com',
+        pass: 'cota mtdn osck zfnn',
       }
     });
 
