@@ -7,7 +7,7 @@ const Postulacion     = require('../models/Postulacion');
 exports.postular = async (req, res, next) => {
   try {
     // Se añade Titulo vacante a la desestructuración
-    const { vacanteId, titulo, nombre, telefono, email, mensaje } = req.body;
+    const {titulo, nombre, telefono, email, mensaje } = req.body;
     const cv = req.file;
     if (!cv) {
       return res.status(400).json({ message: 'No se recibió el CV' });
@@ -21,8 +21,7 @@ exports.postular = async (req, res, next) => {
 
     // 2) Registrar en la base de datos - Se incluye Titulo vacante
     const nuevaPostulacion = new Postulacion({
-      vacanteId,
-      titulo, // Se añade aquí
+      titulo, 
       nombre,
       telefono,
       correo: email,
@@ -46,8 +45,8 @@ exports.postular = async (req, res, next) => {
     const mailOptions = {
       from:     `"${nombre}" <${email}>`,
       // Se actualiza el asunto para incluir el nombre de la vacante
-      to:       'aux.finanzas@vamosamejorar.com',
-      subject: `Nueva postulación: ${titulo} (ID: ${vacanteId})`,
+      to:       'mcasr2014@gmail.com',
+      subject: `Nueva postulación: ${titulo}`,
       html: `
         <!DOCTYPE html>
         <html lang="es">

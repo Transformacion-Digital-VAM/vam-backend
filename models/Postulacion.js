@@ -1,8 +1,7 @@
 const mongoose = require("mongoose");
 
 const PostulacionSchema = new mongoose.Schema({
-  vacanteId: { type: String, required: true }, 
-  titulo: { type: String, required: true },
+  titulo: { type: String, required: true, default:'Asesor de Crédito' },
   nombre: { type: String, required: true },
   telefono: { type: String, required: true },
   correo: { type: String, required: true },
