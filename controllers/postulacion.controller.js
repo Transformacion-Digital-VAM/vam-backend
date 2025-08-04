@@ -1,4 +1,3 @@
-// CONTROLLER - Actualizado
 const path            = require('path');
 const fs              = require('fs');
 const nodemailer      = require('nodemailer');
@@ -46,7 +45,7 @@ exports.postular = async (req, res, next) => {
       from:     `"${nombre}" <${email}>`,
       // Se actualiza el asunto para incluir el nombre de la vacante
       to:       'talentovam@vamosamejorar.com',
-      subject: `Nueva postulación: ${titulo} (ID: ${vacanteId})`,
+      subject: `Nueva postulación: ${titulo}`,
       html: `
         <!DOCTYPE html>
         <html lang="es">
